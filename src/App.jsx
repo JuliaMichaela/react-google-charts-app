@@ -3,10 +3,11 @@ import { Chart } from "react-google-charts";
 
 export const data = [
   ["Task", "Hours per Day"],
-  ["Work", 11],
+  ["Work", 8],
   ["Eat", 2],
-  ["Commute", 2],
-  ["Watch TV", 2],
+  ["Training", 1],
+  ["Stady", 2],
+  ["Housework", 4],
   ["Sleep", 7],
 ];
 
@@ -18,7 +19,7 @@ export const options = {
 function App() {
 
   return (
-    <>
+    <div className="App">
       <Chart
         chartType="PieChart"
         data={data}
@@ -26,7 +27,7 @@ function App() {
         width={"100%"}
         height={"400px"}
       />
-    </>
+    </div>
   )
 }
 
